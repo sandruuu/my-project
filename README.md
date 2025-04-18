@@ -1,4 +1,4 @@
-# AIR - Airline WebSite
+# AIR - Airline Website
 
 AIR este o platforma destinata companiilor aeriene, conceputa pentru a simplifica procesul de rezervare a biletelor si pentru a oferi o experienta moderna si intuitiva atat pasagerilor, cat si administratorilor. Sistemul integreaza functionalitati esentiale pentru gestionarea zborurilor, a utilizatorilor si a rezervarilor, intr-un mod scalabil si usor de intretinut.
 
