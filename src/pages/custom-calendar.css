@@ -1,0 +1,178 @@
+.react-datepicker {
+  font-family: inherit;
+  border: 1px solid #B0BEC5;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.react-datepicker__header {
+  background-color: #1B3A4B;
+  border-bottom: 1px solid #B0BEC5;
+  color: white;
+}
+
+.react-datepicker__current-month, 
+.react-datepicker-time__header, 
+.react-datepicker-year-header {
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: 600;
+}
+
+.react-datepicker__day-name {
+  color: #ECEFF1;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.react-datepicker__day--selected, 
+.react-datepicker__day--keyboard-selected {
+  background-color: #1B3A4B !important;
+  border-radius: 50%;
+  color: white !important;
+}
+
+.react-datepicker__day:hover {
+  background-color: #455A64 !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
+.react-datepicker__day--today {
+  font-weight: bold;
+  color: #1B3A4B;
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: #ECEFF1;
+}
+
+.react-datepicker__navigation:hover *::before {
+  border-color: white;
+}
+
+.react-datepicker__day {
+  margin: 0.2rem;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+}
+
+.react-datepicker__month-container {
+  padding: 5px;
+}
+
+.calendar-popper {
+  z-index: 9999 !important;
+}
+
+.custom-calendar {
+  font-family: inherit !important;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #B0BEC5;
+  border-radius: 50%;
+  outline: none;
+  margin-right: 8px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="radio"]:checked {
+  border-color: #1B3A4B;
+  background-color: white;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #1B3A4B;
+}
+
+input[type="radio"]:hover {
+  border-color: #455A64;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23455A64%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 10px auto;
+  padding-right: 30px !important;
+  cursor: pointer;
+}
+
+select option {
+  background-color: #ECEFF1;
+  color: #1B3A4B;
+  padding: 10px;
+}
+
+select option:checked,
+select option:hover,
+select option:focus {
+  background-color: #B0BEC5 !important;
+  color: #1B3A4B !important;
+}
+
+select:focus {
+  outline: none;
+}
+
+_::-webkit-full-page-media, _:future, :root select {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23455A64%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 10px auto;
+}
+
+@-moz-document url-prefix() {
+  select {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23455A64%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 10px auto;
+  }
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select:focus option:checked {
+  background: #B0BEC5 !important;
+  color: #1B3A4B !important;
+}
+
+select option:checked {
+  font-weight: 600;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  select {
+    color: #1B3A4B !important;
+  }
+  
+  select option:checked {
+    color: #1B3A4B !important;
+    background: #B0BEC5 !important;
+  }
+} 

@@ -1,0 +1,8 @@
+.news {
+    display: flex;
+    height: auto; 
+    background-image: url(../assets/images/world.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
